@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Drive Elite Academy | Master the Road</title>
+  <title>ImprovedDriving | Master the Road</title>
 
   <!-- Tailwind CSS & Animate -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -12,18 +12,15 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 
-  <!-- Additional Styling -->
   <style>
     body {
       font-family: 'Open Sans', sans-serif;
       background-color: #0A0A0A;
       color: #F5F5F5;
     }
-
     h1, h2, h3 {
       font-family: 'Roboto Slab', serif;
     }
-
     .btn-primary {
       background: linear-gradient(90deg, #00BFFF, #007BFF);
       color: white;
@@ -32,12 +29,10 @@
       font-weight: 700;
       transition: all 0.4s ease;
     }
-
     .btn-primary:hover {
       transform: translateY(-5px) scale(1.05);
       box-shadow: 0 10px 25px rgba(0,0,0,0.4);
     }
-
     .glass-card {
       background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(16px);
@@ -45,12 +40,10 @@
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
       transition: transform 0.5s ease, box-shadow 0.5s ease;
     }
-
     .glass-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8);
     }
-
     .parallax-bg {
       background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d');
       background-attachment: fixed;
@@ -65,7 +58,7 @@
   <!-- NAVBAR -->
   <header class="sticky top-0 bg-black/80 backdrop-blur-md shadow-md z-50">
     <nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto text-white">
-      <h1 class="text-3xl font-bold text-blue-400 animate__animated animate__fadeInLeft">Drive Elite</h1>
+      <h1 class="text-3xl font-bold text-blue-400 animate__animated animate__fadeInLeft">ImprovedDriving</h1>
       <ul class="hidden md:flex space-x-8 text-lg">
         <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
         <li><a href="#courses" class="hover:text-blue-400 transition">Courses</a></li>
@@ -77,13 +70,25 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section class="relative min-h-screen flex flex-col items-center justify-center text-center text-white px-4 bg-gradient-to-r from-black to-blue-900 overflow-hidden">
-    <h1 class="text-5xl sm:text-6xl font-bold animate__animated animate__fadeInDown">Drive with Confidence</h1>
-    <p class="text-xl mt-4 animate__animated animate__fadeInUp">Elite Driving School for Beginners & Advanced Learners</p>
-    <a href="#contact" class="btn-primary mt-8 animate__animated animate__pulse animate__infinite">Enroll Now</a>
+  <section class="relative flex flex-col items-center justify-center text-center text-white px-4 bg-gradient-to-r from-black to-blue-900 min-h-[90vh] sm:min-h-screen overflow-hidden">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold animate__animated animate__fadeInDown leading-tight sm:leading-normal">
+      Drive with Confidence
+    </h1>
+    <p class="text-lg sm:text-xl mt-4 animate__animated animate__fadeInUp max-w-xl">
+      Elite Driving School for Beginners & Advanced Learners
+    </p>
+    <a href="#contact" class="btn-primary mt-8 animate__animated animate__pulse animate__infinite">
+      Enroll Now
+    </a>
 
     <!-- Floating Car Image -->
-    <img src="https://cdn-icons-png.flaticon.com/512/3177/3177361.png" alt="car" class="absolute bottom-10 w-24 sm:w-40 animate__animated animate__bounceInRight animate__delay-1s" />
+    <div class="relative mt-10 w-full flex justify-center">
+      <img loading="lazy" 
+        src="https://cdn-icons-png.flaticon.com/512/3177/3177361.png" 
+        alt="Car" 
+        class="w-32 sm:w-40 md:w-56 h-auto animate__animated animate__bounceInUp"
+      />
+    </div>
   </section>
 
   <!-- PARALLAX SECTION -->
@@ -94,7 +99,7 @@
 
   <!-- WHY CHOOSE US -->
   <section id="about" class="py-20 px-6 bg-black text-center">
-    <h2 class="text-4xl font-bold text-blue-400 mb-12">Why Choose Drive Elite?</h2>
+    <h2 class="text-4xl font-bold text-blue-400 mb-12">Why Choose ImprovedDriving?</h2>
     <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
       <div class="glass-card p-8">
         <h3 class="text-2xl font-bold mb-4">Certified Instructors</h3>
@@ -138,11 +143,11 @@
     <h2 class="text-4xl font-bold text-blue-400 mb-12">Our Students Say</h2>
     <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
       <div class="glass-card p-8 text-left">
-        <p class="italic text-lg">"I was super nervous, but Drive Elite made learning fun and easy. Passed on my first try!"</p>
+        <p class="italic text-lg">"I was super nervous, but ImprovedDriving made learning fun and easy. Passed on my first try!"</p>
         <h4 class="mt-4 font-bold text-blue-300">— Emily R.</h4>
       </div>
       <div class="glass-card p-8 text-left">
-        <p class="italic text-lg">"Professional instructors and great cars. I highly recommend the defensive driving course!"</p>
+        <p class="italic text-lg">"Professional instructors and great cars. I highly recommend their defensive driving course!"</p>
         <h4 class="mt-4 font-bold text-blue-300">— Carlos D.</h4>
       </div>
     </div>
@@ -169,7 +174,7 @@
 
   <!-- FOOTER -->
   <footer class="bg-black text-gray-400 text-center py-6">
-    <p>&copy; 2024 Drive Elite Academy. All Rights Reserved.</p>
+    <p>&copy; 2024 ImprovedDriving. All Rights Reserved.</p>
   </footer>
 
 </body>
