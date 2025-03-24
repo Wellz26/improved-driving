@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drive Elite Academy | Master the Road</title>
+
+  <!-- Tailwind CSS & Animate -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Additional Styling -->
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0A0A0A;
+      color: #F5F5F5;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Roboto Slab', serif;
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #00BFFF, #007BFF);
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      transition: all 0.4s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(16px);
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .glass-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8);
+    }
+
+    .parallax-bg {
+      background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 bg-black/80 backdrop-blur-md shadow-md z-50">
+    <nav class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto text-white">
+      <h1 class="text-3xl font-bold text-blue-400 animate__animated animate__fadeInLeft">Drive Elite</h1>
+      <ul class="hidden md:flex space-x-8 text-lg">
+        <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
+        <li><a href="#courses" class="hover:text-blue-400 transition">Courses</a></li>
+        <li><a href="#testimonials" class="hover:text-blue-400 transition">Reviews</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn-primary hidden md:inline-block">Book Now</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="relative min-h-screen flex flex-col items-center justify-center text-center text-white px-4 bg-gradient-to-r from-black to-blue-900 overflow-hidden">
+    <h1 class="text-5xl sm:text-6xl font-bold animate__animated animate__fadeInDown">Drive with Confidence</h1>
+    <p class="text-xl mt-4 animate__animated animate__fadeInUp">Elite Driving School for Beginners & Advanced Learners</p>
+    <a href="#contact" class="btn-primary mt-8 animate__animated animate__pulse animate__infinite">Enroll Now</a>
+
+    <!-- Floating Car Image -->
+    <img src="https://cdn-icons-png.flaticon.com/512/3177/3177361.png" alt="car" class="absolute bottom-10 w-24 sm:w-40 animate__animated animate__bounceInRight animate__delay-1s" />
+  </section>
+
+  <!-- PARALLAX SECTION -->
+  <section class="parallax-bg py-20 text-center text-white">
+    <h2 class="text-4xl sm:text-5xl font-bold mb-6 animate__animated animate__fadeInUp">Master the Road with the Pros</h2>
+    <p class="text-lg sm:text-xl max-w-3xl mx-auto">High pass rates. Certified instructors. Cutting-edge vehicles.</p>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section id="about" class="py-20 px-6 bg-black text-center">
+    <h2 class="text-4xl font-bold text-blue-400 mb-12">Why Choose Drive Elite?</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="glass-card p-8">
+        <h3 class="text-2xl font-bold mb-4">Certified Instructors</h3>
+        <p>Expert coaches with over 15 years of experience in road safety & education.</p>
+      </div>
+      <div class="glass-card p-8">
+        <h3 class="text-2xl font-bold mb-4">95% First-Time Pass Rate</h3>
+        <p>Our unique learning system helps students pass their driving test on the first try!</p>
+      </div>
+      <div class="glass-card p-8">
+        <h3 class="text-2xl font-bold mb-4">Modern Vehicles</h3>
+        <p>Learn on new, top-rated vehicles with the latest in driving tech and safety features.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="py-20 px-6 bg-gradient-to-r from-black to-blue-900 text-center text-white">
+    <h2 class="text-4xl font-bold mb-12">Courses We Offer</h2>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div class="glass-card p-8">
+        <h3 class="text-xl font-bold mb-4">Beginner Driving Lessons</h3>
+        <p>Perfect for first-time drivers, with one-on-one guidance and personalized plans.</p>
+        <p class="mt-4 font-bold text-blue-400 text-lg">$50 / lesson</p>
+      </div>
+      <div class="glass-card p-8">
+        <h3 class="text-xl font-bold mb-4">Defensive Driving Course</h3>
+        <p>Learn advanced techniques to avoid accidents and navigate heavy traffic safely.</p>
+        <p class="mt-4 font-bold text-blue-400 text-lg">$75 / lesson</p>
+      </div>
+      <div class="glass-card p-8">
+        <h3 class="text-xl font-bold mb-4">Test Prep & Evaluation</h3>
+        <p>Mock exams and feedback to ensure you're ready to ace your driving test!</p>
+        <p class="mt-4 font-bold text-blue-400 text-lg">$65 / session</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="py-20 px-6 bg-black text-center">
+    <h2 class="text-4xl font-bold text-blue-400 mb-12">Our Students Say</h2>
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div class="glass-card p-8 text-left">
+        <p class="italic text-lg">"I was super nervous, but Drive Elite made learning fun and easy. Passed on my first try!"</p>
+        <h4 class="mt-4 font-bold text-blue-300">— Emily R.</h4>
+      </div>
+      <div class="glass-card p-8 text-left">
+        <p class="italic text-lg">"Professional instructors and great cars. I highly recommend the defensive driving course!"</p>
+        <h4 class="mt-4 font-bold text-blue-300">— Carlos D.</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-20 px-6 bg-gradient-to-r from-black to-blue-900 text-center text-white">
+    <h2 class="text-4xl font-bold mb-10">Contact & Book Now</h2>
+    <p class="mb-8 text-lg">Call us at <strong>(555) 123-4567</strong> or fill out the form below to get started!</p>
+    <form class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 bg-white/10 p-8 rounded-xl shadow-lg">
+      <input type="text" placeholder="Your Name" class="p-4 rounded-lg bg-black/50 text-white border border-blue-400" required>
+      <input type="email" placeholder="Your Email" class="p-4 rounded-lg bg-black/50 text-white border border-blue-400" required>
+      <input type="tel" placeholder="Your Phone" class="p-4 rounded-lg bg-black/50 text-white border border-blue-400" required>
+      <select class="p-4 rounded-lg bg-black/50 text-white border border-blue-400">
+        <option>Choose Course</option>
+        <option>Beginner Lessons</option>
+        <option>Defensive Driving</option>
+        <option>Test Prep</option>
+      </select>
+      <textarea placeholder="Message" class="p-4 rounded-lg bg-black/50 text-white border border-blue-400 md:col-span-2"></textarea>
+      <button type="submit" class="btn-primary md:col-span-2">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-gray-400 text-center py-6">
+    <p>&copy; 2024 Drive Elite Academy. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+
